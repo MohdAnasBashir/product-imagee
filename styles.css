@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+  /* background-color: hsl(30, 38%, 92%); */
+  background: radial-gradient(pink,white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper{
+    height: 100vh;
+    width:100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    display: flex;
+    background-color: white;
+    width:800px;
+    height: 400px; /* Added this */
+    border-radius: 30px;
+    overflow:hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    /* filter: drop-shadow(0 0 10px black); */
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.cardimg{
+    flex:1;
+}
+.mugimg{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.cardtext{
+    width:50%;
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px
+}
+
+.price{
+    margin:10px 0;
+
+
+}
+.greenprice{
+    color:hsl(158, 36%, 37%);;
+    font-size: 2rem;
+    font-weight: 600;
+    background: none;
+}
+.colorless{
+    text-decoration: line-through;
+    color:gray;
+    background: none;
+
+}
+
+button{
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    background-color:hsl(158, 36%, 37%);;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    transition: background-color 0.3s ease;
+    
+}
+button:hover{
+    background-color: darkseagreen;
+}
+.topp{
+    letter-spacing: 2px;
+    color:grey;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+.header{
+    font-size: 3rem;
+}
+.content{
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
